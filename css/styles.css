@@ -11,6 +11,10 @@ body {
   padding-right: 20px;
   padding-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
+  color: #263547;
+}
+a {
+  color: inherit;
 }
 
 .main-container {
@@ -24,12 +28,10 @@ body {
 .sidebar {
   display: flex;
   align-items: center;
-  /* ali-content: center; */
   flex-direction: column;
   background: #cbb097;
-  width: 400px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  width: 65%;
+  padding: 40px 20px;
 }
 
 .my-photo {
@@ -44,8 +46,6 @@ body {
 .lanuages-container {
   width: 100%;
   margin-bottom: 50px;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .contacts-title,
@@ -54,29 +54,33 @@ body {
 .lanuages-title {
   margin-bottom: 20px;
   text-transform: uppercase;
-  color: #000000;
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
 }
+.contacts-list {
+  list-style: none;
+}
 
-.contacts-link-phone,
+.contacts-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.contacts-list .contacts-link-phone,
 .contacts-link-email,
 .contacts-link-skype,
 .contacts-link-linkedin,
 .contacts-link-github,
 .contacts-link-loation {
-  position: relative;
-  display: inline-block;
-  padding-left: 30px;
-  margin-bottom: 15px;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
-  color: #000000;
   text-decoration: none;
 }
-.contacts-link-phone::before {
+.contacts-link-title {
+  font-size: 16px;
+  font-weight: 900;
+}
+/* .contacts-link-phone::before {
   content: '';
   position: absolute;
   width: 32px;
@@ -84,9 +88,9 @@ body {
   left: -15px;
   top: -5px;
   background-image: url('../img/mobile.svg');
-}
+} */
 
-.contacts-link-email::before {
+/* .contacts-link-email::before {
   content: '';
   position: absolute;
   width: 32px;
@@ -94,8 +98,8 @@ body {
   left: -15px;
   top: -5px;
   background-image: url('../img/mail4.svg');
-}
-.contacts-link-skype::before {
+} */
+/* .contacts-link-skype::before {
   content: '';
   position: absolute;
   width: 32px;
@@ -103,8 +107,8 @@ body {
   left: -15px;
   top: -5px;
   background-image: url('../img/013-skype.svg');
-}
-.contacts-link-linkedin::before {
+} */
+/* .contacts-link-linkedin::before {
   content: '';
   position: absolute;
   width: 32px;
@@ -112,8 +116,8 @@ body {
   left: -15px;
   top: 5px;
   background-image: url('../img/045-linkedin.svg');
-}
-.contacts-link-github::before {
+} */
+/* .contacts-link-github::before {
   content: '';
   position: absolute;
   width: 32px;
@@ -121,8 +125,8 @@ body {
   left: -15px;
   top: 5px;
   background-image: url('../img/038-github.svg');
-}
-.contacts-link-loation::before {
+} */
+/* .contacts-link-loation::before {
   content: '';
   position: absolute;
   width: 32px;
@@ -130,7 +134,7 @@ body {
   left: -15px;
   top: -5px;
   background-image: url('../img/location2.svg');
-}
+} */
 
 .tech-skills-item,
 .soft-skill-item,
@@ -138,14 +142,13 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
-  color: #000000;
   margin-left: 15px;
 }
 
 /* .tech-skills-text,
 .soft-skills-text,
 .lanuages-text {
-  color: #000000;
+  color: #263547;
 } */
 
 .about-me-container {
@@ -175,7 +178,6 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  color: #000000;
 }
 
 .projects-container,
@@ -198,7 +200,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: #000000;
   margin-left: 12px;
   margin-bottom: 40px;
 }
@@ -210,7 +211,6 @@ body {
 .project-link {
   text-decoration: none;
   font-weight: 600;
-  color: #000000;
   cursor: pointer;
 }
 .education:not(:last-child),
@@ -228,7 +228,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
 }
 
 .Work-Experience-title {
@@ -236,7 +235,6 @@ body {
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 20px;
-  color: #000000;
 }
 
 .time-work {
@@ -246,5 +244,5 @@ body {
   color: #a8a8a8;
 }
 .cherta {
-  color: #000000;
+  color: #263547;
 }
