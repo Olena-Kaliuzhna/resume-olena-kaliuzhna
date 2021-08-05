@@ -12,65 +12,96 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <nav class="nav-header">
+      <ul class="nav-list">
+        <li class="nav-item" data-menu="main-info">Main</li>
+        <li class="nav-item" data-menu="skills">Skills</li>
+        <li class="nav-item" data-menu="projects">Projects</li>
+        <li class="nav-item" data-menu="works-education">Education and Work</li>
+        <li class="download">
+          <a
+            class="download-link"
+            href="./cv-file/CV_Olena_Kaliuzhna _frontend_developer.pdf"
+            download="CV_Olena_Kaliuzhna _frontend_developer.pdf"
+            >CV</a
+          >
+        </li>
+      </ul>
+    </nav>
     <!--main-container-->
     <main class="main-container">
-      <aside class="sidebar">
-        <img class="my-photo" src="./img/my-photo.jpg" alt="my photo" />
-
+      <!--about-me-main-info-->
+      <section class="main-info section active">
+        <h2 class="my-profession">Front-End Developer</h2>
+        <div class="about-me">
+          <img class="my-photo" src="./img/photo1_2.jpg" alt="my photo" />
+          <div class="about-me-inner">
+            <h1 class="my-name">Olena Kaliuzhna</h1>
+            <p class="main-info-text">
+              I want to join a modern and active company, where I can apply my
+              skills, gain new experience and grow as a developer.
+            </p>
+          </div>
+        </div>
         <!--Contacts-container-->
         <div class="contacts-container">
           <h3 class="contacts-title">Contacts</h3>
 
-          <ul class="contacts-list">
-            <li class="contacts-list-item">
-              <span class="contacts-link-title">Phone</span>
-              <a class="contacts-link-phone" href="tel:+389987838353">
-                +38 0987838353</a
-              >
-            </li>
-            <li class="contacts-list-item">
-              <span class="contacts-link-title">Email</span>
-              <a
-                class="contacts-link-email"
-                href="mailto:om_kaliuzhna_dz@gmail.com"
-                >om.kaliuzhna.dz@gmail.com</a
-              >
-            </li>
-            <li class="contacts-list-item">
-              <span class="contacts-link-title">Skype</span>
-              <a
-                class="contacts-link-skype"
-                href="mailto:om_kaliuzhna_dz@gmail.com"
-                >+380987838353</a
-              >
-            </li>
-            <li class="contacts-list-item">
-              <span class="contacts-link-title">Linkedin</span>
-              <a
-                class="contacts-link-linkedin"
-                href="https://www.linkedin.com/in/olena-kaliuzhna/"
-                >linkedin.com/in/olena-kaliuzhna/</a
-              >
-            </li>
-            <li class="contacts-list-item">
-              <span class="contacts-link-title">Github</span>
-              <a
-                class="contacts-link-github"
-                href="https://github.com/Olena-Kaliuzhna"
-                >github.com/Olena-Kaliuzhna</a
-              >
-            </li>
-            <li class="contacts-list-item">
-              <span class="contacts-link-title">Location</span>
-              <span class="contacts-link-loation">Kyiv, Ukraine</span>
-            </li>
+          <ul class="contacts-list__wrapper">
+            <ul class="contacts-list">
+              <li class="contacts-list-item">
+                <span class="contacts-link-title">Phone</span>
+                <a class="contacts-link-phone" href="tel:+389987838353">
+                  +380987838353</a
+                >
+              </li>
+              <li class="contacts-list-item">
+                <span class="contacts-link-title">Email</span>
+                <a
+                  class="contacts-link-email"
+                  href="mailto:om_kaliuzhna_dz@gmail.com"
+                  >om.kaliuzhna.dz@gmail.com</a
+                >
+              </li>
+              <li class="contacts-list-item">
+                <span class="contacts-link-title">Skype</span>
+                <a class="contacts-link-skype" href="skype:+380987838353?call"
+                  >+380987838353</a
+                >
+              </li>
+            </ul>
+            <ul class="contacts-list">
+              <li class="contacts-list-item">
+                <span class="contacts-link-title">Linkedin</span>
+                <a
+                  class="contacts-link-linkedin"
+                  href="https://www.linkedin.com/in/olena-kaliuzhna/"
+                  >linkedin.com/in/olena-kaliuzhna/</a
+                >
+              </li>
+              <li class="contacts-list-item">
+                <span class="contacts-link-title">Github</span>
+                <a
+                  class="contacts-link-github"
+                  href="https://github.com/Olena-Kaliuzhna"
+                  >github.com/Olena-Kaliuzhna</a
+                >
+              </li>
+              <li class="contacts-list-item">
+                <span class="contacts-link-title">Location</span>
+                <span class="contacts-link-loation">Kyiv, Ukraine</span>
+              </li>
+            </ul>
           </ul>
         </div>
+      </section>
 
+      <!-- skills-container-->
+      <section class="skills section">
         <!-- Tech-Skills-container-->
         <div class="tech-skills-container">
           <h3 class="tech-skills-title">Tech Skills</h3>
-          <ul>
+          <ul class="tech-skills-list">
             <li class="tech-skills-item">
               <span class="tech-skills-text">HTML5</span>
             </li>
@@ -115,7 +146,7 @@
         <!-- lanuages-container-->
         <div class="lanuages-container">
           <h3 class="lanuages-title">Lanuages</h3>
-          <ul>
+          <ul class="lanuages-list">
             <li class="lanuages-item">
               <span class="lanuages-text">Ukrainian: Native;</span>
             </li>
@@ -123,14 +154,14 @@
               <span class="lanuages-text">Russian: Native;</span>
             </li>
             <li class="lanuages-item">
-              <span class="lanuages-text">English: Pre-Intermediate;</span>
+              <span class="lanuages-text">English: Intermediate;</span>
             </li>
           </ul>
         </div>
         <!-- Soft-Skills-container-->
         <div class="soft-skills-container">
           <h3 class="soft-skills-title">Soft Skills</h3>
-          <ul>
+          <ul class="soft-skills-list">
             <li class="soft-skill-item">
               <span class="soft-skills-text">Communication</span>
             </li>
@@ -145,27 +176,14 @@
             </li>
           </ul>
         </div>
-      </aside>
+      </section>
 
-      <!--about-me-container-->
-      <div class="about-me-container">
-        <div>
-          <!--about-me-main-info-->
-          <div class="about-me-main-info">
-            <h2 class="my-profession">Front-End Developer</h2>
-            <h1 class="my-name">Olena Kaliuzhna</h1>
-            <p class="main-info">
-              I want to join a modern and active company, where I can apply my
-              skills, gain new experience and grow as a developer
-            </p>
-          </div>
-        </div>
-
-        <!--project-container-->
+      <!--project-container-->
+      <section class="projects section">
         <div class="projects-container">
           <h3 class="projects-title">Projects</h3>
           <ul class="projects-list">
-            <li>
+            <li class="projects-item">
               <p class="project-title">Phonebook</p>
               <a class="project-link" href=" https://phonebook-ok.netlify.app/"
                 >https://phonebook-ok.netlify.app/</a
@@ -179,7 +197,7 @@
                 REST-API, CRUD)
               </p>
             </li>
-            <li>
+            <li class="projects-item">
               <p class="project-title">Movies-Search</p>
               <a
                 class="project-link"
@@ -195,7 +213,7 @@
                 AXIOS, REST-API)
               </p>
             </li>
-            <li>
+            <li class="projects-item">
               <p class="project-title">Webstudio</p>
               <a
                 class="project-link"
@@ -208,9 +226,11 @@
               </p>
             </li>
           </ul>
+        </div>
+        <div class="projects-container">
           <h3 class="projects-title">Team Projects</h3>
           <ul class="projects-list">
-            <li>
+            <li class="projects-item">
               <p class="project-title">OnlineShop</p>
               <a class="project-link" href="https://olx-shop-ok.netlify.app/"
                 >https://olx-shop-ok.netlify.app/</a
@@ -223,7 +243,7 @@
                 (HTML, SCSS, ADAPTIVE SITE, JAVASCRIPT, AXIOS, REST-API, CRUD)
               </p>
             </li>
-            <li>
+            <li class="projects-item">
               <p class="project-title">Barbershop</p>
               <a
                 class="project-link"
@@ -235,21 +255,12 @@
                 (HTML, SCSS, JAVASCRIPT, ADAPTIVE SITE)
               </p>
             </li>
-            <!-- <li>
-              <p class="project-title">Webstudio</p>
-              <a
-                class="project-link"
-                href="https://olena-kaliuzhna.github.io/web-studio/index.html"
-                >https://olena-kaliuzhna.github.io/web-studio/index.html</a
-              >
-              <p class="project-discription">Adaptive multi-page site.</p>
-              <p class="project-tecnologies">
-                (HTML, SCSS, JAVASCRIPT, ADAPTIVE SITE)
-              </p>
-            </li> -->
           </ul>
         </div>
+      </section>
 
+      <!--works and education container-->
+      <section class="works-education section">
         <!-- Education-->
         <div class="education-container">
           <h3 class="education-title">Education</h3>
@@ -291,11 +302,13 @@
           </div>
           <div class="company">
             <p class="company-name">"INTERKABEL KYIV"</p>
-            <p class="role">ENGINEER-TECHNOLOGIST</p>
+            <p class="role">ENGINEER</p>
             <span class="time-work">August 2008 - September 2009 </span>
           </div>
         </div>
-      </div>
+      </section>
     </main>
+
+    <script src="./menu.js"></script>
   </body>
 </html>
