@@ -254,6 +254,7 @@ p {
   font-weight: 600;
   cursor: pointer;
 }
+
 .education:not(:last-child),
 .company:not(:last-child) {
   margin-bottom: 20px;
@@ -357,5 +358,10 @@ p {
   }
   .contacts-link-title {
     margin-right: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .works-education {
+    padding-top: 70px;
   }
 }
